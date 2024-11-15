@@ -13,3 +13,10 @@
     configuration data for services that are accessed via DNS.
   limits: |
     255 bytes per TXT record. However many records you feel comfortable with in a zone file.
+- name: AWS Resource Tags
+  link: https://docs.aws.amazon.com/tag-editor/latest/userguide/best-practices-and-strats.html
+  how: |
+    AWS resources can be tagged with key-value pairs. These tags can be used to store
+    configuration data for the resource.
+  limits: |
+    50 tags per resource. 128 characters per key, 256 characters per value.
