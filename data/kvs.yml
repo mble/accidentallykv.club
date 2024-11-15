@@ -41,3 +41,10 @@
   limits: |
     [Limits are documented](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/store-information-in-variables#limits-for-configuration-variables).
     You can store up to 1,000 organization variables, 500 variables per repository, and 100 variables per environment. The total combined size limit for organization and repository variables is 256 KB per workflow run.
+- name: Bluesky
+  link: https://docs.bsky.app/docs/category/http-reference
+  how: |
+    Bluesky has a robust API for [creating posts](https://docs.bsky.app/docs/tutorials/creating-a-post) and [reading them back](https://docs.bsky.app/docs/api/app-bsky-feed-get-posts).
+    This can be leverged similar to the [Turla](https://www.securityweek.com/turla-malware-obtains-cc-address-instagram-comments/) malware group.
+  limits: |
+    [Rate limits](https://docs.bsky.app/docs/advanced-guides/rate-limits) are documented, on top of service limits.
