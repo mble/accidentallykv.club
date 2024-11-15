@@ -19,7 +19,8 @@
     Arbitrary data can be stored in DNS TXT records. This is a common way to store
     configuration data for services that are accessed via DNS.
   limits: |
-    255 bytes per TXT record. However many records you feel comfortable with in a zone file.
+    255 bytes per TXT record.  
+    However many records you feel comfortable with in a zone file.
 - name: AWS Resource Tags
   link: https://docs.aws.amazon.com/tag-editor/latest/userguide/best-practices-and-strats.html
   how: |
@@ -33,3 +34,10 @@
     Gists can be used to store configuration data. They can be public or private.
   limits: |
     Unable to find any solid documented limits on Gists.
+- name: GitHub Actions Variables
+  link: https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/store-information-in-variables
+  how: |
+    GitHub Actions can store configuration data in variables. Unlike secrets (which can't be read back out), variables can.
+  limits: |
+    [Limits are documented](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/store-information-in-variables#limits-for-configuration-variables).
+    You can store up to 1,000 organization variables, 500 variables per repository, and 100 variables per environment. The total combined size limit for organization and repository variables is 256 KB per workflow run.
