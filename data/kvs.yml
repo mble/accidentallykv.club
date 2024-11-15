@@ -1,3 +1,10 @@
+- name: Slack
+  link: https://api.slack.com/
+  how: |
+    Slack messages can contain attachments. These attachments can contain fields
+    that can be used to store configuration data. Message bodies can also be used.
+  limits: |
+    Mostly covered by rate limits: https://api.slack.com/apis/rate-limits.
 - name: Heroku Config Variables
   link: https://devcenter.heroku.com/articles/config-vars
   how: |

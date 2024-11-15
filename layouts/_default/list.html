@@ -56,9 +56,9 @@
             <a href="{{ .link }}">{{ .name }}</a>
           </h4>
           <h5>How?</h5>
-          <p>{{ .how }}</p>
+          <p>{{ .how | markdownify }}</p>
           <h5>Limits</h5>
-          <p>{{ .limits }}</p>
+          <p>{{ .limits | markdownify }}</p>
         </container>
         {{ end }}
       </section>
