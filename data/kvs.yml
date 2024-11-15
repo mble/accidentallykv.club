@@ -19,4 +19,4 @@
     AWS resources can be tagged with key-value pairs. These tags can be used to store
     configuration data for the resource.
   limits: |
-    50 tags per resource. 128 characters per key, 256 characters per value.
+    50 tags per resource. 128 characters per key, 256 characters per value. ~19 KB of data per tag set.
