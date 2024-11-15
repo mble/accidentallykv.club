@@ -48,3 +48,10 @@
     This can be leverged similar to the [Turla](https://www.securityweek.com/turla-malware-obtains-cc-address-instagram-comments/) malware group.
   limits: |
     [Rate limits](https://docs.bsky.app/docs/advanced-guides/rate-limits) are documented, on top of service limits.
+- name: Kubernetes Annotations
+  link: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
+  how: |
+    Kubernetes objects can be annotated with key-value pairs. These annotations can be used to store configuration data.
+  limits: |
+    [Syntax for keys](https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/#syntax-and-character-set) is documented.
+    Total size limit is [256 KiB](https://github.com/kubernetes/kubernetes/blob/cf480a3a1a9cb22f3439c0a7922822d9f67f31b5/test/integration/controlplane/synthetic_controlplane_test.go#L341).
