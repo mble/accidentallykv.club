@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>accidentallykv.club</title>
+    {{ template "partials/meta.html" . }} {{ template "partials/includes.html" .
+    }}
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a href="/">accidentallykv.club</a>
+      </h1>
+      <h2>for systems that are accidentally key-value stores</h2>
+    </header>
+    <main>
+      <section>
+        <h3 id="what-is-this">What is this?</h3>
+        <p>
+          This is a collection of systems that are accidentally key-value
+          stores. These systems are not designed to be key-value stores, but
+          they can be coerced into being one.
+        </p>
+
+        <h3 id="prerequisites">Prerequisites</h3>
+        <p>
+          To be included in this list, a system must meet the following
+          criteria:
+        </p>
+        <ul>
+          <li>It <b>must not</b> be designed to be a key-value store.</li>
+          <li>
+            It <b>must</b> implement <code>GET</code>, <code>SET</code> and
+            <code>DEL</code> operations, or similar.
+          </li>
+          <li>
+            It <b>must</b> be reachable over the network, or otherwise
+            accessible.
+          </li>
+          <li>
+            It <b>must</b> be possible to store relatively arbitrary data in it.
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h3 id="systems">Systems</h3>
+        {{ range .Site.Data.kvs }}
+        <container>
+          <h4
+            id='{{ $id := .name | strings.ToLower}}{{ replaceRE `\s` "-" $id }}'
+          >
+            <a href="{{ .link }}">{{ .name }}</a>
+          </h4>
+          <h5>How?</h5>
+          <p>{{ .how }}</p>
+          <h5>Limits</h5>
+          <p>{{ .limits }}</p>
+        </container>
+        {{ end }}
+      </section>
+    </main>
+    <footer>
+      <p>A <a href="https://matt.blwt.io">Matt Blewitt</a> joint.</p>
+    </footer>
+  </body>
+</html>
