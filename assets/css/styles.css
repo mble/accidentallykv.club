@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  font-size: 20px;
 
   --vwidth: 50vw;
   --fg: #333;
@@ -21,7 +22,6 @@ html {
 }
 
 body {
-  font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.4rem;
   width: var(--vwidth);
@@ -84,6 +84,12 @@ p,
 ul,
 ol {
   margin: 0.5em 0;
+}
+
+container {
+  border: var(--fg) 1px solid;
+  border-style: dotted;
+  padding: 1em;
 }
 
 a {
