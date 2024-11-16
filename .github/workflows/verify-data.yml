@@ -13,4 +13,4 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3.3
-      - run: scripts/verify-data
+      - run: ruby scripts/verify-data

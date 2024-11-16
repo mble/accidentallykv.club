@@ -10,3 +10,5 @@ data.each_with_index do |entry, idx|
     raise "Invalid entry [#{idx}]: missing keys #{EXPECTED_KEYS - entry.keys}"
   end
 end
+
+exit 0
