@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://accidentallykv.club/sitemap.xml
