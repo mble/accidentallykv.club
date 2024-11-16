@@ -42,6 +42,12 @@ section {
   flex-direction: column;
 }
 
+info {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.75em;
+}
+
 h1 {
   font-size: 2rem;
   line-height: 1.5em;

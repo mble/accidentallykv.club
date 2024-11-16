@@ -45,7 +45,7 @@
   link: https://docs.bsky.app/docs/category/http-reference
   how: |
     Bluesky has a robust API for [creating posts](https://docs.bsky.app/docs/tutorials/creating-a-post) and [reading them back](https://docs.bsky.app/docs/api/app-bsky-feed-get-posts).
-    This can be leverged similar to the [Turla](https://www.securityweek.com/turla-malware-obtains-cc-address-instagram-comments/) malware group.
+    This can be leveraged similar to the [Turla](https://www.securityweek.com/turla-malware-obtains-cc-address-instagram-comments/) malware group.
   limits: |
     [Rate limits](https://docs.bsky.app/docs/advanced-guides/rate-limits) are documented, on top of service limits.
 - name: Kubernetes Annotations
@@ -55,3 +55,9 @@
   limits: |
     [Syntax for keys](https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/#syntax-and-character-set) is documented.
     Total size limit is [256 KiB](https://github.com/kubernetes/kubernetes/blob/cf480a3a1a9cb22f3439c0a7922822d9f67f31b5/test/integration/controlplane/synthetic_controlplane_test.go#L341).
+- name: Stripe Metadata
+  link: https://docs.stripe.com/api/metadata
+  how: |
+    Stripe objects can be annotated with key-value pairs. Metadata can be used to do horrible things, like store application state(!).
+  limits: |
+    50 keys per object. 40 characters per key, 500 characters per value.
