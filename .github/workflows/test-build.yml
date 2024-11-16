@@ -1,0 +1,19 @@
+# build site
+name: Test Build
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: setup-hugo
+        uses: peaceiris/actions-hugo@v3
+      - name: build
+        run: scripts/build
+      - name: check
+        run: |
+          grep "$(git rev-parse --short HEAD)" public/index.html
