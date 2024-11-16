@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby --enable-frozen-string-literal -w --disable=gems,did_you_mean,rubyopt
+
+require "yaml"
+
+EXPECTED_KEYS = %w[name link how limits]
+
+data = YAML.safe_load_file("data/kvs.yml")
+data.each_with_index do |entry, idx|
+  unless entry.keys.sort == EXPECTED_KEYS.sort
+    raise "Invalid entry [#{idx}]: missing keys #{EXPECTED_KEYS - entry.keys}"
+  end
+end
