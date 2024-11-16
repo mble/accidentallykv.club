@@ -65,6 +65,6 @@
   link: https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html
   how: |
     Kind of cheating as S3 is "malloc for the internet", but S3 is an extremely viable key-value store even if the intention is to store "objects".  
-    Can be paired with the tagging system above to have 0 byte objects with tags are the "real" storage.
+    Can be paired with the tagging system above to have 0 byte objects with tags as the "real" storage.
   limits: |
     [Well documented](https://docs.aws.amazon.com/general/latest/gr/s3.html#limits_s3), plus costs of API calls.
