@@ -8,5 +8,5 @@ COMMIT_HASH=$(git rev-parse --short HEAD)
 
 hugo --gc --minify
 # update the build date and commit hash in the generated site
-sed -i '' "s/##COMMIT_HASH##/${COMMIT_HASH}/g" ${OUTPUT_DIR}/index.html
-sed -i '' "s/##BUILD_DATE##/${BUILD_DATE}/g" ${OUTPUT_DIR}/index.html
+sed -i "s/##COMMIT_HASH##/${COMMIT_HASH}/g" ${OUTPUT_DIR}/index.html
+sed -i "s/##BUILD_DATE##/${BUILD_DATE}/g" ${OUTPUT_DIR}/index.html
