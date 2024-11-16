@@ -4,7 +4,7 @@
     Slack messages can contain attachments. These attachments can contain fields
     that can be used to store configuration data. Message bodies can also be used.
   limits: |
-    Mostly covered by rate limits: https://api.slack.com/apis/rate-limits.
+    [Mostly covered by rate limits](https://api.slack.com/apis/rate-limits).
 - name: Heroku Config Variables
   link: https://devcenter.heroku.com/articles/config-vars
   how: |
@@ -12,7 +12,7 @@
     These variables are accessible to your application and can be used to store
     sensitive information like API keys and passwords. No additional charge.
   limits: |
-    100 apps * 64 kb = 6.4 MB of storage.
+    100 apps * 64 kb = 6.4 MB of storage. [Source](https://devcenter.heroku.com/articles/limits#config-vars).
 - name: DNS
   link: https://en.wikipedia.org/wiki/Domain_Name_System
   how: |
