@@ -1,3 +1,9 @@
+- name: XDP (Express Data Path)
+  link: https://pagedout.institute/download/PagedOut_005.pdf
+  how: |
+    This absolutely cursed thing comes from [B Horn](https://b.horn.uk/). "We can use [XDP] to implement a terrible Key-Value store that can be queried over the network by seeing if it drops a TCP connection. By sending a guess, the eBPF code can check if its greater than the real value and drop the connection if that is the case. This lets us perform a binary search to discover the value!"
+  limits: |
+    The limit is your sanity.
 - name: Slack
   link: https://api.slack.com/
   how: |
