@@ -1,3 +1,10 @@
+- name: A literal bird
+  link: https://www.youtube.com/watch?v=hCQCP-5g5bo
+  how: |
+    If you are [Benn Jordan](https://bsky.app/profile/bennjordan.bsky.social) (aka The Flashbulb) you can convert data to a spectrogram,
+    play it to a bird, then have the bird play it back to you.
+  limits: |
+    Bird brains.
 - name: XDP (Express Data Path)
   link: https://pagedout.institute/download/PagedOut_005.pdf
   how: |
